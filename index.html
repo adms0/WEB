@@ -18,33 +18,6 @@
     <title>Test-WEB</title>
   </head>
   <body>
-    <!-- <header>
-      <section class="navigation">
-        <div class="container">
-          <div class="box-navigation">
-            <div class="box">
-              <h1>POPIT.py</h1>
-            </div>
-            <div class="box menu-navigation">
-              <ul>
-                <li>
-                  <a href="#">Portpolio</a>
-                </li>
-                <li>
-                  <a href="#">Blog</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="box menu-bar">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header> -->
     <nav>
       <div class="container nav__container">
         <a href="index.html" class="nav__logo">
@@ -52,13 +25,13 @@
         </a>
         <ul class="nav__menu">
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#">Detais</a>
           </li>
         </ul>
         <button id="open-menu-btn">
@@ -69,7 +42,6 @@
         </button>
       </div>
     </nav>
-
     <header>
       <div class="container header__container">
         <div class="header__left">
@@ -84,37 +56,12 @@
         </div>
         <div class="header__right">
           <div class="header__image">
-            <img
-              src="images/pop-it.png"
-              alt="pop-it-kodland-assigment"
-              class="hero__image"
-            />
+            <img src="images/pop-it.png" alt="pop-it" class="hero__image" />
           </div>
           <div class="header__right-bg"></div>
         </div>
       </div>
     </header>
-
-    <!-- <main>
-      <section class="hero container">
-        <div class="hero__cta">
-          <h1 class="hero__cta-title">POP IT!</h1>
-          <p class="hero__cta-subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
-            corrupti libero optio repellat eveniet error eligendi illum
-            molestiae corporis unde alias eius illo,
-          </p>
-          <button class="btn btn-primary">See More</button>
-          <div>
-            <img
-              src="images/pop-it.png"
-              alt="pop-it-kodland-assigment"
-              class="hero__image"
-            />
-          </div>
-        </div>
-      </section>
-    </main> -->
     <section id="about">
       <h2>Do You Know What is Pop It?</h2>
       <p class="lead">
@@ -125,55 +72,80 @@
         quam dicta provident nam.
       </p>
       <section id="services">
-        <div class="contaier services__container">
+        <div class="container services__container">
           <h2>This is The Services of Pop It!</h2>
-          <div class="services__center">
-            <div class="services__cards">
-              <div class="services__card">
-                <img
-                  class="services-image"
-                  src="images/square.png"
-                  alt="pop-it-kodland-assigment"
-                />
-                <h5 class="services-title">Colorful Square</h5>
-                <a href="#" class="services-button">Discover More</a>
-              </div>
-              <div class="services__card">
-                <img
-                  class="service-image"
-                  src="images/amongus.png"
-                  alt="pop-it-kodland-assigment"
-                />
-                <h5 class="services-title">Among Us Character</h5>
-                <a href="#" class="services-button">Discover More</a>
-              </div>
-              <div class="services__card">
-                <img
-                  class="services-image"
-                  src="images/round.png"
-                  alt="pop-it-kodland-assigment"
-                />
-                <h5 class="services-title">Colorful Round</h5>
-                <a href="#" class="services-button">Discover More</a>
+          <div>
+            <div class="services__center">
+              <div class="services__cards">
+                <div class="services__card">
+                  <img
+                    class="services-image"
+                    src="images/square.png"
+                    alt="pop-it"
+                  />
+                  <h5>Colorful Square</h5>
+                  <a href="#">Discover More</a>
+                </div>
+                <div class="services__card">
+                  <img
+                    class="service-image"
+                    src="images/amongus.png"
+                    alt="pop-it"
+                  />
+                  <h5>Among Us Character</h5>
+                  <a href="#">Discover More</a>
+                </div>
+                <div class="services__card">
+                  <img
+                    class="services-image"
+                    src="images/round.png"
+                    alt="pop-it"
+                  />
+                  <h5>Colorful Round</h5>
+                  <a href="#">Discover More</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- <div class="about__container">
-        <article class="about">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            mollitia ducimus, facere, recusandae consequatur magni optio qui
-            obcaecati ullam explicabo dicta aut, esse officia enim unde quod
-            temporibus. Dignissimos voluptate amet similique facere est rerum id
-            quam dicta provident nam.
-          </p>
-        </article>
-      </div> -->
+      <section id="detail">
+        <div class="detail__container container">
+          <img
+            class="detail__bg-grid"
+            src="images/bg-grid.png"
+            alt="pop-it-kodland-bg-grid"
+          />
+          <div class="detail__content">
+            <h2 class="detail__head">You Must Be Interested</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              ullam excepturi odio! Maxime, architecto nulla eius esse commodi
+              voluptatem itaque voluptates error nisi perspiciatis sint magni
+              quisquam, id qui accusantium praesentium quam sit nemo illo quo.
+            </p>
+          </div>
+          <div class="detail__image-container">
+            <img
+              class="detail__image"
+              src="images/photo.jpg"
+              alt="pop-it-kodland-assigment"
+            />
+          </div>
+        </div>
+      </section>
     </section>
-    <footer></footer>
-
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__logo">Pop IT!</div>
+        <ul class="footer__menu">
+          <li class="menu-list">Contact Us</li>
+          <li class="menu-list">About Us</li>
+          <li class="menu-list">Terms & Conditions</li>
+          <li class="menu-list">Privacy Policy</li>
+        </ul>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

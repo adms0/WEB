@@ -94,7 +94,7 @@ section {
 
 .btn:hover {
   background: var(--color-white);
-  color: var(--color-dark);
+  color: var(--color-blue);
 }
 
 .btn-primary {
@@ -231,17 +231,10 @@ section#services {
   display: grid;
   grid-template-columns: auto;
   gap: 2rem;
-  background: var(--color-blue);
 }
 
 .services__container h2 {
   text-align: center;
-}
-
-.services__center {
-  width: 100%;
-  padding: 0 6rem;
-  margin: 1.5rem 0;
 }
 
 .services__cards {
@@ -251,21 +244,17 @@ section#services {
 }
 
 .services__card {
-  padding: 4rem 2rem;
+  padding: 4rem 0rem;
   text-align: center;
 }
 
-.services-title {
-  font-weight: 600;
-  margin-bottom: 1.75rem;
-}
-
-.services-button {
+.services__card a {
   background-color: var(--color-orange);
-  padding: 0.75rem 2rem;
   color: var(--color-dark);
+  margin: 1.5rem 0rem;
   text-transform: uppercase;
   font-weight: 600;
+  text-align: center;
   transition: all 400ms ease;
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
@@ -273,7 +262,91 @@ section#services {
   -o-transition: all 400ms ease;
 }
 
-.services-button:hover {
-  background: var(--color-white);
-  color: var(--color-dark);
+@media screen and (max-width: 475px) {
+  .services__card a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__card a {
+    display: none;
+  }
+}
+
+#detail {
+  /* background: var(--color-white); */
+}
+
+.detail__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.detail__head h3 {
+  width: 25%;
+}
+
+.detail__container {
+  flex-direction: row;
+}
+
+.detail__content {
+  width: 100%;
+}
+
+.detail__container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail__bg-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  z-index: -1;
+}
+
+.detail__content {
+  width: 60%;
+}
+
+.detail__image-container {
+  height: 280px;
+}
+
+.detail__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 2rem 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 6rem;
 }
